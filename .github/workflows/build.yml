@@ -20,6 +20,14 @@ jobs:
 
       - name: Build React App
         run: npm run build
+      
+      - name: Commit build output
+        run: |
+          git config --global user.name "SaviHerath"
+          git config --global user.email "savi@chaebanicecream.com"
+          git add build
+          git commit -m "Add build output Savi"
+          git push
 
       # - name: Copy to S3
       #   env:
