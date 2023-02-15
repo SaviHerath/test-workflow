@@ -25,7 +25,7 @@ jobs:
         run: |
           git config --global user.name "SaviHerath"
           git config --global user.email "savi@chaebanicecream.com"
-          git add build
+          git add -f build
           git commit -m "Add build output Savi"
           git push
 
